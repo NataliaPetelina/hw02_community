@@ -5,16 +5,12 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 <body>
-<header>
     {% include 'includes/header.html' %}
-</header>
-<main>
-    {% block content %}
-        Контент не подвезли :(
-    {% endblock %}
-</main>
-<footer>
+    <main>
+        {% block content %}
+            Контент не подвезли :(
+        {% endblock %}
+    </main>
     {% include 'includes/footer.html' %}
-</footer>
 </body>
 </html> 
