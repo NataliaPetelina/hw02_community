@@ -7,7 +7,7 @@ LIMIT: int = 10
 
 def index(request):
     template = 'posts/index.html'
-    posts = Post.objects.order_by('-pub_date')[:10]
+    posts = Post.objects.order_by('-pub_date')[:LIMIT]
     context = {
         'posts': posts
     }
